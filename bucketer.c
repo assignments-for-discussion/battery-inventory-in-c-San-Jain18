@@ -9,6 +9,7 @@ struct CountsBySoH {
 
 struct CountsBySoH countBatteriesByHealth(const int* presentCapacities, int nBatteries) {
   struct CountsBySoH counts = {0, 0, 0};
+  //classify battery according to their SoH and updation of counts
   for(int i=0;i<nBatteries;i++)
     {
       
